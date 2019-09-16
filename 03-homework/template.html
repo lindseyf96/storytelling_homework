@@ -1,0 +1,2294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <style>
+        body {
+            margin:auto;
+            padding:50px 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .serif {
+            font-family: 'Lora', serif;
+        }
+        .sans-serif {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        /* choose a light or dark theme to add to the body tag. */
+        .dark-theme {
+            background-color: #151515;
+            color: #fbfbfb;
+        }
+        .light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .header {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .story-body, .header, .chart-section, .footer {
+            margin:auto;
+            max-width: 700px;
+        }
+
+        .footer {
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+
+        .chart-section.wide{
+            width:100%;
+            max-width:1200px;
+        }
+
+        .chart-section.wide p.chart-title {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        .chart-section.wide p.chart-subhead {
+            width:100%;
+            max-width:700px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+
+        /* text styles */
+
+        p.kicker {
+            font-size:1rem;
+            text-transform:uppercase;
+        }
+
+        .text-center {
+            text-align:center;
+        }
+
+        h1.headline {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 0.25rem;
+            margin-top: 1rem;
+            font-weight: 800;
+        }
+
+        h2.subhead {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom:0;
+            margin-top: 15px;
+            font-weight: 400;
+        }
+
+        p.body-text {
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-top:0;
+            margin-bottom:15px;
+        }
+
+        h3.section-head {
+            font-size:2rem;
+            margin:40px 0 10px 0;
+            font-weight:700;
+            line-height:1.3;
+        }
+
+        .byline {
+            font-size: 1.1rem;
+            line-height: 0.75;
+            margin-top: 1.5rem;
+            font-weight: 500;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight:400;
+            text-transform:uppercase;
+            letter-spacing:0.5px;
+        }
+
+
+        p.note {
+            font-size:0.85rem;
+        }
+
+        /* chart styles */
+
+        .chart-section {
+            width:100%;
+            max-width:1200px;
+            padding:20px 0px;
+        }
+
+        .story-body .chart-section {
+            padding-top:0px;
+        }
+
+
+        .chart-row {
+            display:flex;
+            justify-content: space-between;
+            margin-top:20px;
+        }
+
+        p.chart-title {
+            font-size:1.3rem;
+            font-weight:700;
+            max-width:700px;
+            margin:0px auto 5px auto;
+        }
+        p.chart-subhead {
+            margin:0 auto;
+            max-width:700px;
+            font-size:1rem;
+            margin-bottom:15px;
+        }
+
+        p.chart-label {
+            margin:0 0 5px 0;
+            font-size:0.85rem;
+            text-transform:uppercase;
+            font-weight:600;
+        }
+
+        .chart-row .chart {
+            width:100%;
+            padding-right:15px;
+            min-width:calc(25% - 15px);
+
+        }
+
+
+
+        p.chart-source {
+            font-size:0.85rem;
+            margin:0;
+        }
+
+
+
+
+
+        /* photos */
+
+        .photo-section {
+            padding:30px 0px;
+            width:100%;
+            margin:auto;
+            display:flex;
+            max-width:1200px;
+        }
+
+        .photo {
+            width:100%;
+            padding-right:15px;
+        }
+        .photo img {
+            width:100%;	
+        }
+
+        p.caption {
+            font-size:0.9rem;
+            margin:0;
+        }
+
+
+
+        /* mobile */
+
+        @media (max-width:700px) {
+
+            .chart-row {
+                display:block;
+            }
+
+            .chart-row .chart {
+                padding:0;
+            }
+
+            .photo-section {
+                display:block;
+            }
+            .photo {
+                padding:0;
+            }
+
+        }
+
+        #g-templates-laptop, #g-templates-medium, #g-templates-mobile {
+            display: none;
+        }
+
+        @media (max-width: 490px) {
+            #g-templates-mobile {
+                display: block;
+            }
+        }
+
+        @media (min-width: 490px) and (max-width: 620px) {
+            #g-templates-laptop {
+                display: block;
+            }
+        }
+
+        @media (min-width: 620px)  {
+            #g-templates-medium {
+                display: block;
+            }
+        }
+
+    </style>
+    
+    <!-- google fonts: Open Sans (sans-serif) and Lora (serif) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700&display=swap" rel="stylesheet">
+      
+    <title>This is your title</title>
+  </head>
+
+  <body class="light-theme"> <!-- all of the content on your html page goes inside the body -->
+
+    <div class="header">
+      <p class="kicker">Homework 3</p>
+      <h1 class="headline">Analyzing Gender Representation of 34,476 Comic Book Characters</h1>
+      <h2 class="subhead">Female characters appear in superhero comics less often than males — but when they are included, how are they depicted?</h2>
+      <p class="byline">(not really) by Lindsey Feingold</p>
+      <p class="date">Published September 15, 2019</p>
+    </div>
+
+    <div class="story-body">
+      <p class="body-text serif">DISCLAIMER: THE TEXT WAS TAKEN WORD FOR WORD FROM AN ARTICLE ON THE PUDDING. THIS IS A CLASS PROJECT. I DID NOT ANALYZE OR WRITE ANY OF THIS MYSELF. I DID TAKE THE ORIGINAL GRAPHICS AND EDIT THEM, BUT THAT IS ALL. HERE IS THE LINK TO THE ACUTAL ARTICLE: <a href=https://pudding.cool/2017/07/comics/>https://pudding.cool/2017/07/comics/<a></https:></p>
+
+      <p class="body-text serif">the comics industry has had a complicated relationship with female characters. They are often hyper-sexualized, unnecessarily brutalized, stereotyped, and used as tokens. They're also rare. Only 26.7 percent of all DC and Marvel characters are female, and only 12 percent of mainstream superhero comics have female protagonists.</p>
+
+      <p class="body-text serif">Three out of five comic book characters have at least one superpower, regardless of gender. When we categorize these powers, we find that there are some clear gender imbalances.</p>
+    </div>
+
+    <div class="chart-section">
+        <div class="chart-row">
+          <div class="chart">
+
+            <!--- PASTE YOUR AI2HTML AFTER THIS LINE -->
+
+
+
+<!-- Generated by ai2html v0.89.0 - 2019-09-15 20:08 -->
+<!-- ai file: templates1.ai -->
+<style type='text/css' media='screen,print'>
+	#g-templates1-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-templates1-box p {
+		margin:0;
+	}
+	.g-aiAbs {
+		position:absolute;
+	}
+	.g-aiImg {
+		display:block;
+		width:100% !important;
+	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.g-aiPointText p { white-space: nowrap; }
+	#g-templates1-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates1-medium p {
+		font-family:Helvetica;
+		font-weight:200;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates1-medium .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+	}
+	#g-templates1-medium .g-pstyle1 {
+		font-weight:500;
+		font-size:15px;
+		line-height:18px;
+		height:18px;
+		letter-spacing:0em;
+	}
+	#g-templates1-medium .g-pstyle2 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		letter-spacing:0em;
+	}
+	#g-templates1-medium .g-pstyle3 {
+		font-weight:500;
+		height:14px;
+		letter-spacing:0em;
+	}
+	#g-templates1-medium .g-pstyle4 {
+		height:14px;
+	}
+	#g-templates1-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates1-laptop p {
+		font-family:Helvetica;
+		font-weight:700;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates1-laptop .g-pstyle0 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		text-align:center;
+	}
+	#g-templates1-laptop .g-pstyle1 {
+		font-weight:500;
+		font-size:13px;
+		line-height:16px;
+		height:16px;
+		letter-spacing:0em;
+	}
+	#g-templates1-laptop .g-pstyle2 {
+		font-size:13px;
+		line-height:15px;
+		height:15px;
+		letter-spacing:0em;
+	}
+	#g-templates1-laptop .g-pstyle3 {
+		font-weight:500;
+		height:14px;
+		letter-spacing:0em;
+	}
+	#g-templates1-laptop .g-pstyle4 {
+		height:14px;
+	}
+	#g-templates1-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates1-mobile p {
+		font-family:Helvetica;
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates1-mobile .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		text-align:center;
+	}
+	#g-templates1-mobile .g-pstyle1 {
+		font-weight:700;
+		height:14px;
+		letter-spacing:0em;
+	}
+	#g-templates1-mobile .g-pstyle2 {
+		font-weight:200;
+		height:14px;
+		letter-spacing:0em;
+	}
+	#g-templates1-mobile .g-pstyle3 {
+		font-size:11px;
+		line-height:13px;
+		height:13px;
+		letter-spacing:0em;
+	}
+	#g-templates1-mobile .g-pstyle4 {
+		height:14px;
+	}
+	#g-templates1-mobile .g-pstyle5 {
+		height:14px;
+		text-align:center;
+	}
+	#g-templates1-mobile .g-pstyle6 {
+		height:14px;
+		letter-spacing:0em;
+	}
+
+</style>
+
+<div id="g-templates1-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-templates1-medium" class="g-artboard" style="width:620px; height:556px;" data-aspect-ratio="1.115" data-min-width="620">
+		<img id="g-templates1-medium-img" class="g-aiImg g-aiAbs" alt="" src="templates1-medium.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.7961%;margin-top:-12.2px;left:7.5807%;width:534px;">
+			<p class="g-pstyle0">There Are Large Gender Imbalances When It Comes to Superpowers</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:9.6307%;margin-top:-11.5px;left:20.2738%;width:416px;">
+			<p class="g-pstyle1">Certain Types Are Geared More Toward Men, or Vice Versa</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:15.6882%;margin-top:-12.2px;left:86.7784%;width:58px;">
+			<p class="g-pstyle2">Male</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.0284%;margin-top:-16.2px;left:3.8447%;width:89px;">
+			<p class="g-pstyle3"># of powers</p>
+			<p class="g-pstyle3">per category</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:19.5031%;margin-top:-23.4px;left:30.6189%;width:119px;">
+			<p class="g-pstyle3">men tend to have </p>
+			<p class="g-pstyle3">physical powers </p>
+			<p class="g-pstyle3">or magical objects</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.5443%;margin-top:-12.2px;left:86.7784%;width:77px;">
+			<p class="g-pstyle2">Female</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.6596%;margin-top:-11.5px;left:0.7341%;width:39px;">
+			<p class="g-pstyle1">10</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.0499%;margin-top:-30.6px;left:61.5866%;width:130px;">
+			<p class="g-pstyle3">women tend to have</p>
+			<p class="g-pstyle3">mental powers or </p>
+			<p class="g-pstyle3">powers that involve</p>
+			<p class="g-pstyle3">nature </p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.415%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">9</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.9905%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">8</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.7459%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">7</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.3215%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">6</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:51.897%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">5</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.8323%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">4</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.9474%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">3</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.2423%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">2</p>
+		</div>
+		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.0769%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">1</p>
+		</div>
+		<div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.6524%;margin-top:-11.5px;left:1.5405%;width:30px;">
+			<p class="g-pstyle1">0</p>
+		</div>
+		<div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.8927%;margin-top:-22.7px;left:45.5819%;width:69px;">
+			<p class="g-pstyle4">Energy </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.5979%;margin-top:-15.5px;left:63.8375%;width:65px;">
+			<p class="g-pstyle4">Shape-</p>
+			<p class="g-pstyle4">shifting</p>
+		</div>
+		<div id="g-ai0-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.8927%;margin-top:-22.7px;left:4.7707%;width:85px;">
+			<p class="g-pstyle4">Enhanced </p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai0-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.1877%;margin-top:-29.9px;left:25.1356%;width:75px;">
+			<p class="g-pstyle4">Super-</p>
+			<p class="g-pstyle4">natural </p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai0-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.3028%;margin-top:-8.3px;left:72.6665%;width:59px;">
+			<p class="g-pstyle4">Divine</p>
+		</div>
+		<div id="g-ai0-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.3676%;margin-top:-29.9px;left:80.6687%;width:78px;">
+			<p class="g-pstyle4">Physics</p>
+			<p class="g-pstyle4">or reality </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai0-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.4827%;margin-top:-8.3px;left:16.0453%;width:68px;">
+			<p class="g-pstyle4">Objects</p>
+		</div>
+		<div id="g-ai0-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.7777%;margin-top:-15.5px;left:54.7529%;width:65px;">
+			<p class="g-pstyle4">Mental</p>
+			<p class="g-pstyle4">powers</p>
+		</div>
+		<div id="g-ai0-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.7777%;margin-top:-15.5px;left:34.4304%;width:81px;">
+			<p class="g-pstyle4">Enhanced</p>
+			<p class="g-pstyle4">skills</p>
+		</div>
+		<div id="g-ai0-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:90.6625%;margin-top:-37.1px;left:90.2322%;width:84px;">
+			<p class="g-pstyle4">Elemental </p>
+			<p class="g-pstyle4">and</p>
+			<p class="g-pstyle4">environ-</p>
+			<p class="g-pstyle4">mental</p>
+			<p class="g-pstyle4">powers</p>
+		</div>
+		<div id="g-ai0-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.9492%;margin-top:-9px;left:1.8908%;width:135px;">
+			<p class="g-pstyle3">Source: The Pudding</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-templates1-laptop" class="g-artboard" style="width:490px; height:489px;" data-aspect-ratio="1.002" data-min-width="490" data-max-width="619">
+		<img id="g-templates1-laptop-img" class="g-aiImg g-aiAbs" alt="" src="templates1-laptop.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.7844%;margin-top:-19.3px;left:50.1638%;margin-left:-152px;width:304px;">
+			<p class="g-pstyle0">There Are Large Gender Imbalances When </p>
+			<p class="g-pstyle0">It Comes to Superpowers</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:11.703%;margin-top:-10.2px;left:14.267%;width:365px;">
+			<p class="g-pstyle1">Certain Types Are Geared More Toward Men, or Vice Versa</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:19.5415%;margin-top:-9.6px;left:87.1722%;width:50px;">
+			<p class="g-pstyle2">Male</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:21.8215%;margin-top:-15.7px;left:3.4465%;width:86px;">
+			<p class="g-pstyle3"># of powers</p>
+			<p class="g-pstyle3">per category</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.4472%;margin-top:-22.7px;left:30.4763%;width:115px;">
+			<p class="g-pstyle3">men tend to have </p>
+			<p class="g-pstyle3">physical powers </p>
+			<p class="g-pstyle3">or magical objects</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.836%;margin-top:-9.6px;left:87.1722%;width:66px;">
+			<p class="g-pstyle2">Female</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.5882%;margin-top:-9px;left:0.3063%;width:35px;">
+			<p class="g-pstyle3">10</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.0707%;margin-top:-29.6px;left:61.7397%;width:126px;">
+			<p class="g-pstyle3">women tend to have</p>
+			<p class="g-pstyle3">mental powers or </p>
+			<p class="g-pstyle3">powers that involve</p>
+			<p class="g-pstyle3">nature </p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.9051%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">9</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.6838%;margin-top:-15.7px;left:48.7396%;width:66px;">
+			<p class="g-pstyle4">Mental</p>
+			<p class="g-pstyle4">powers</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.0176%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">8</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:42.1301%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">7</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:47.2426%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">6</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.8392%;margin-top:-15.7px;left:33.703%;width:82px;">
+			<p class="g-pstyle4">Enhanced</p>
+			<p class="g-pstyle4">skills</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.8721%;margin-top:-8.8px;left:14.1879%;width:69px;">
+			<p class="g-pstyle4">Objects</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.355%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.0782%;margin-top:-36.6px;left:87.5977%;width:86px;">
+			<p class="g-pstyle4">Elemental </p>
+			<p class="g-pstyle4">and</p>
+			<p class="g-pstyle4">environ-</p>
+			<p class="g-pstyle4">mental</p>
+			<p class="g-pstyle4">powers</p>
+		</div>
+		<div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.672%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">4</p>
+		</div>
+		<div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.1196%;margin-top:-8.8px;left:70.9271%;width:60px;">
+			<p class="g-pstyle4">Divine</p>
+		</div>
+		<div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.1935%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">3</p>
+		</div>
+		<div id="g-ai1-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.9195%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">2</p>
+		</div>
+		<div id="g-ai1-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.0544%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">1</p>
+		</div>
+		<div id="g-ai1-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.1669%;margin-top:-9px;left:1.1205%;width:29px;">
+			<p class="g-pstyle3">0</p>
+		</div>
+		<div id="g-ai1-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.0374%;margin-top:-29.6px;left:79.822%;width:81px;">
+			<p class="g-pstyle4">Physics</p>
+			<p class="g-pstyle4">or reality </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai1-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.6163%;margin-top:-22.7px;left:45.3854%;width:72px;">
+			<p class="g-pstyle4">Energy </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai1-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.0374%;margin-top:-29.6px;left:23.9559%;width:77px;">
+			<p class="g-pstyle4">Super-</p>
+			<p class="g-pstyle4">natural </p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai1-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.1951%;margin-top:-15.7px;left:63.0273%;width:68px;">
+			<p class="g-pstyle4">Shape-</p>
+			<p class="g-pstyle4">shifting</p>
+		</div>
+		<div id="g-ai1-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.6163%;margin-top:-22.7px;left:1.9748%;width:82px;">
+			<p class="g-pstyle4">Enhanced</p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai1-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.474%;margin-top:-8.8px;left:1.6709%;width:131px;">
+			<p class="g-pstyle3">Source: The Pudding</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-templates1-mobile" class="g-artboard" style="width:375px; height:404.799999999999px;" data-aspect-ratio="0.926" data-min-width="375" data-max-width="489">
+		<img id="g-templates1-mobile-img" class="g-aiImg g-aiAbs" alt="" src="templates1-mobile.png"/>
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:7.1212%;margin-top:-21.8px;left:48.544%;margin-left:-148.5px;width:297px;">
+			<p class="g-pstyle0">There Are Large Gender Imbalances </p>
+			<p class="g-pstyle0">When It Comes to Superpowers</p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.7858%;margin-top:-9px;left:88.0055%;width:49px;">
+			<p class="g-pstyle1">Male</p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.3765%;margin-top:-15.5px;left:4.6242%;width:91px;">
+			<p class="g-pstyle2"># of powers</p>
+			<p class="g-pstyle2">per category</p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:22.9854%;margin-top:-9px;left:88.0055%;width:63px;">
+			<p class="g-pstyle1">Female</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.0296%;margin-top:-8.4px;left:0.6669%;width:34px;">
+			<p class="g-pstyle3">10</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.1852%;margin-top:-16.2px;left:53.8971%;width:64px;">
+			<p class="g-pstyle4">Mental</p>
+			<p class="g-pstyle4">powers</p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.4762%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">9</p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.17%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">8</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.8636%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">7</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.2544%;margin-top:-16.2px;left:38.0789%;margin-left:-40.5px;width:81px;">
+			<p class="g-pstyle5">Enhanced</p>
+			<p class="g-pstyle5">skills</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:44.5574%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">6</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:47.9342%;margin-top:-9px;left:12.7573%;width:67px;">
+			<p class="g-pstyle4">Objects</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:56.0369%;margin-top:-37.8px;left:92.2872%;margin-left:-42.5px;width:85px;">
+			<p class="g-pstyle5">Elemental </p>
+			<p class="g-pstyle5">and</p>
+			<p class="g-pstyle5">environ-</p>
+			<p class="g-pstyle5">mental</p>
+			<p class="g-pstyle5">powers</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.2509%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">5</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.4388%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">4</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.5567%;margin-top:-9px;left:70.3388%;width:59px;">
+			<p class="g-pstyle4">Divine</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.6265%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">3</p>
+		</div>
+		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.8141%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">2</p>
+		</div>
+		<div id="g-ai2-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.4961%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">1</p>
+		</div>
+		<div id="g-ai2-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.1896%;margin-top:-8.4px;left:1.4854%;width:28px;">
+			<p class="g-pstyle3">0</p>
+		</div>
+		<div id="g-ai2-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.6298%;margin-top:-23.4px;left:2.3443%;width:81px;">
+			<p class="g-pstyle4">Enhanced</p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai2-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6556%;margin-top:-30.6px;left:79.8151%;width:78px;">
+			<p class="g-pstyle4">Physics</p>
+			<p class="g-pstyle4">or reality </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai2-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.8769%;margin-top:-23.4px;left:45.1911%;width:69px;">
+			<p class="g-pstyle4">Energy </p>
+			<p class="g-pstyle4">mani-</p>
+			<p class="g-pstyle4">pulation</p>
+		</div>
+		<div id="g-ai2-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.6556%;margin-top:-30.6px;left:24.4453%;width:74px;">
+			<p class="g-pstyle4">Super-</p>
+			<p class="g-pstyle4">natural </p>
+			<p class="g-pstyle4">physical </p>
+			<p class="g-pstyle4">abilities</p>
+		</div>
+		<div id="g-ai2-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.0983%;margin-top:-16.2px;left:62.1292%;width:65px;">
+			<p class="g-pstyle4">Shape-</p>
+			<p class="g-pstyle4">shifting</p>
+		</div>
+		<div id="g-ai2-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.8591%;margin-top:-9px;left:2.0391%;width:135px;">
+			<p class="g-pstyle6">Source: The Pudding</p>
+		</div>
+	</div>
+
+</div>
+
+<!-- End ai2html - 2019-09-15 20:08 -->
+
+
+
+<br>
+<br>
+
+<!-- End ai2html - 2019-09-15 19:24 -->
+
+        </div>
+        </div>
+    </div>
+
+
+
+    <div class="story-body">
+        <p class="body-text serif">The data suggest that less-physical powers — such as empathy, intellect, and telepathy — tend to be more represented among female characters. Men however, often have highly physical powers, as well as those that involve gadgets. Female characters dominate in relatively few physical abilities; and those where they do are often tied to gender stereotypes. Pheromone control — the ability to generate and control pheromones that affect emotional and physical states, such as sleep, fear, and pleasure — occurs five times as often in a female character. Sonic scream appears in twice as many female characters as male; and prehensile hair — the ability to control one’s own hair — appears in female characters seven times more often.</p>
+    </div>
+      
+    <div class="chart-section">
+            <div class="chart-row">
+                <div class="chart">
+        
+                    <!-- AI2HTML content goes here -->
+
+                    <!-- Generated by ai2html v0.89.0 - 2019-09-15 19:24 -->
+<!-- ai file: templates2.ai -->
+<style type='text/css' media='screen,print'>
+	#g-templates2-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-templates2-box p {
+		margin:0;
+	}
+	.g-aiAbs {
+		position:absolute;
+	}
+	.g-aiImg {
+		display:block;
+		width:100% !important;
+	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.g-aiPointText p { white-space: nowrap; }
+	#g-templates2-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates2-medium p {
+		font-family:Helvetica;
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(106,131,255);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates2-medium .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-medium .g-pstyle1 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-medium .g-pstyle2 {
+		height:14px;
+		text-align:center;
+	}
+	#g-templates2-medium .g-pstyle3 {
+		height:14px;
+	}
+	#g-templates2-medium .g-pstyle4 {
+		height:14px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-medium .g-pstyle5 {
+		line-height:12px;
+		height:12px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-medium .g-pstyle6 {
+		height:14px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates2-laptop p {
+		font-family:Helvetica;
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(106,131,255);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates2-laptop .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop .g-pstyle1 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop .g-pstyle2 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop .g-pstyle3 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop .g-pstyle4 {
+		height:14px;
+	}
+	#g-templates2-laptop .g-pstyle5 {
+		height:14px;
+		text-align:center;
+	}
+	#g-templates2-laptop .g-pstyle6 {
+		height:14px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-laptop .g-pstyle7 {
+		line-height:12px;
+		height:12px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-laptop .g-pstyle8 {
+		font-size:13px;
+		line-height:16px;
+		height:16px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-laptop .g-pstyle9 {
+		height:14px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates2-mobile p {
+		font-family:Helvetica;
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0.05em;
+		text-align:left;
+		color:rgb(106,131,255);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates2-mobile .g-pstyle0 {
+		font-weight:700;
+		font-size:15px;
+		line-height:18px;
+		height:18px;
+		letter-spacing:0em;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile .g-pstyle1 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile .g-pstyle2 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile .g-pstyle3 {
+		height:14px;
+	}
+	#g-templates2-mobile .g-pstyle4 {
+		height:14px;
+		text-align:center;
+	}
+	#g-templates2-mobile .g-pstyle5 {
+		height:14px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-mobile .g-pstyle6 {
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile .g-pstyle7 {
+		font-size:13px;
+		line-height:16px;
+		height:16px;
+		text-align:center;
+		color:rgb(0,0,0);
+	}
+	#g-templates2-mobile .g-pstyle8 {
+		line-height:12px;
+		height:12px;
+		color:rgb(255,170,210);
+	}
+	#g-templates2-mobile .g-pstyle9 {
+		height:14px;
+		letter-spacing:0em;
+		color:rgb(0,0,0);
+	}
+
+</style>
+
+<div id="g-templates2-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-templates2-medium" class="g-artboard" style="width:620px; height:639px;" data-aspect-ratio="0.97" data-min-width="620">
+		<img id="g-templates2-medium-img" class="g-aiImg g-aiAbs" alt="" src="templates2-medium.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:4.2608%;margin-top:-12.2px;left:1.9271%;width:621px;">
+			<p class="g-pstyle0">Superpowers Per Category: Which Gender Does Each Individual Power Favor?</p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:10.7789%;margin-top:-10.9px;left:30.4105%;width:209px;">
+			<p class="g-pstyle1">Enhanced physical abilities</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:10.7789%;margin-top:-10.9px;left:64.7337%;width:229px;">
+			<p class="g-pstyle1">Supernatural physical abilities</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:12.868%;margin-top:-12.2px;left:13.8751%;width:58px;">
+			<p class="g-pstyle0">Male</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.7163%;margin-top:-9px;left:45.1918%;margin-left:-35px;width:70px;">
+			<p class="g-pstyle2">Stamina</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.7164%;margin-top:-9px;left:72.9032%;width:104px;">
+			<p class="g-pstyle3">Invulnerability</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:17.0934%;margin-top:-12.2px;left:13.8751%;width:77px;">
+			<p class="g-pstyle0">Female</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:17.5332%;margin-top:-9px;left:45.2491%;margin-left:-67px;width:134px;">
+			<p class="g-pstyle2">Berserker Strength</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:17.5332%;margin-top:-9px;left:74.8387%;width:72px;">
+			<p class="g-pstyle3">Strength</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.3501%;margin-top:-9px;left:45.2435%;margin-left:-49.5px;width:99px;">
+			<p class="g-pstyle2">Super Eating</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.5067%;margin-top:-9px;left:76.129%;width:52px;">
+			<p class="g-pstyle3">Feral</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.48%;margin-top:-9px;left:45.2103%;margin-left:-56.5px;width:113px;">
+			<p class="g-pstyle2">Siphon Abilities</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.4801%;margin-top:-9px;left:74.8387%;width:73px;">
+			<p class="g-pstyle3">Adaptive</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.1155%;margin-top:-10.9px;left:10.4668%;width:74px;">
+			<p class="g-pstyle1">Objects</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.4534%;margin-top:-9px;left:45.2283%;margin-left:-39.5px;width:79px;">
+			<p class="g-pstyle2">Longevity</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:26.4535%;margin-top:-9px;left:70.8065%;width:126px;">
+			<p class="g-pstyle3">Matter Absorption</p>
+		</div>
+		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.4268%;margin-top:-9px;left:41.746%;width:58px;">
+			<p class="g-pstyle4">Agility</p>
+		</div>
+		<div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.5833%;margin-top:-9px;left:70.8065%;width:128px;">
+			<p class="g-pstyle3">Enhance Mutation</p>
+		</div>
+		<div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.0528%;margin-top:-9px;left:10.6452%;width:72px;">
+			<p class="g-pstyle3">Gadgets</p>
+		</div>
+		<div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.4003%;margin-top:-9px;left:73.5484%;width:88px;">
+			<p class="g-pstyle3">Duplication</p>
+		</div>
+		<div id="g-ai0-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.8697%;margin-top:-9px;left:9.8387%;width:86px;">
+			<p class="g-pstyle3">Power Suit</p>
+		</div>
+		<div id="g-ai0-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.0356%;margin-top:-10.9px;left:36.6917%;width:130px;">
+			<p class="g-pstyle1">Enhanced skills</p>
+		</div>
+		<div id="g-ai0-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.3736%;margin-top:-9px;left:72.9032%;width:101px;">
+			<p class="g-pstyle3">Flame Breath</p>
+		</div>
+		<div id="g-ai0-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.8431%;margin-top:-9px;left:9.8387%;width:89px;">
+			<p class="g-pstyle3">Power Item</p>
+		</div>
+		<div id="g-ai0-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.347%;margin-top:-9px;left:73.5484%;width:90px;">
+			<p class="g-pstyle3">Heat Vision</p>
+		</div>
+		<div id="g-ai0-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.5035%;margin-top:-9px;left:39.8387%;width:87px;">
+			<p class="g-pstyle3">Leadership</p>
+		</div>
+		<div id="g-ai0-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.8165%;margin-top:-9px;left:10.8065%;width:72px;">
+			<p class="g-pstyle3">Implants</p>
+		</div>
+		<div id="g-ai0-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.3204%;margin-top:-9px;left:40.6452%;width:72px;">
+			<p class="g-pstyle3">Tracking</p>
+		</div>
+		<div id="g-ai0-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.3204%;margin-top:-9px;left:69.8387%;width:147px;">
+			<p class="g-pstyle3">Genetic Manipulation</p>
+		</div>
+		<div id="g-ai0-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.6334%;margin-top:-9px;left:9.0323%;width:102px;">
+			<p class="g-pstyle3">Insanely Rich</p>
+		</div>
+		<div id="g-ai0-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.9808%;margin-top:-9px;left:74.0323%;width:86px;">
+			<p class="g-pstyle3">Magnetism</p>
+		</div>
+		<div id="g-ai0-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:44.2938%;margin-top:-9px;left:39.0323%;width:97px;">
+			<p class="g-pstyle3">Omni-lingual</p>
+		</div>
+		<div id="g-ai0-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.7977%;margin-top:-9px;left:76.3785%;width:55px;">
+			<p class="g-pstyle4">Flight</p>
+		</div>
+		<div id="g-ai0-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:47.1107%;margin-top:-9px;left:39.0323%;width:100px;">
+			<p class="g-pstyle3">Escape Artist</p>
+		</div>
+		<div id="g-ai0-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.4331%;margin-top:-10.9px;left:4.4011%;width:163px;">
+			<p class="g-pstyle1">Energy manipulation</p>
+		</div>
+		<div id="g-ai0-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.1452%;margin-top:-9px;left:69.8042%;width:136px;">
+			<p class="g-pstyle4">Pheromone Control</p>
+		</div>
+		<div id="g-ai0-37" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.7711%;margin-top:-9px;left:39.0323%;width:107px;">
+			<p class="g-pstyle3">Marksmanship</p>
+		</div>
+		<div id="g-ai0-38" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:51.6491%;margin-top:-9px;left:72.8635%;width:104px;">
+			<p class="g-pstyle4">Sonic Scream</p>
+		</div>
+		<div id="g-ai0-39" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.275%;margin-top:-9px;left:41.4576%;width:69px;">
+			<p class="g-pstyle4">Intellect</p>
+		</div>
+		<div id="g-ai0-40" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.4315%;margin-top:-9px;left:9.3548%;width:93px;">
+			<p class="g-pstyle3">Blast Power</p>
+		</div>
+		<div id="g-ai0-41" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.3095%;margin-top:-9px;left:72.1187%;width:113px;">
+			<p class="g-pstyle4">Prehensile Hair</p>
+		</div>
+		<div id="g-ai0-42" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.6224%;margin-top:-9px;left:37.2708%;width:125px;">
+			<p class="g-pstyle4">Unarmed Combat</p>
+		</div>
+		<div id="g-ai0-43" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.092%;margin-top:-9px;left:6.6129%;width:130px;">
+			<p class="g-pstyle3">Energy Absorption</p>
+		</div>
+		<div id="g-ai0-44" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.1263%;margin-top:-9px;left:37.9609%;width:115px;">
+			<p class="g-pstyle4">Swordsmanship</p>
+		</div>
+		<div id="g-ai0-45" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.0654%;margin-top:-9px;left:10.3226%;width:78px;">
+			<p class="g-pstyle3">Radiation</p>
+		</div>
+		<div id="g-ai0-46" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.7258%;margin-top:-9px;left:9.5161%;width:89px;">
+			<p class="g-pstyle3">Force Field</p>
+		</div>
+		<div id="g-ai0-47" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.0137%;margin-top:-10.9px;left:70.9288%;width:122px;">
+			<p class="g-pstyle1">Mental powers</p>
+		</div>
+		<div id="g-ai0-48" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.0481%;margin-top:-10.9px;left:42.1826%;width:65px;">
+			<p class="g-pstyle1">Divine</p>
+		</div>
+		<div id="g-ai0-49" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.2297%;margin-top:-9px;left:4.5161%;width:165px;">
+			<p class="g-pstyle3">Energy-Enhanced Strike</p>
+		</div>
+		<div id="g-ai0-50" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.8556%;margin-top:-8px;left:74.3608%;width:74px;">
+			<p class="g-pstyle5">Empathy</p>
+		</div>
+		<div id="g-ai0-51" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.0466%;margin-top:-9px;left:7.2581%;width:127px;">
+			<p class="g-pstyle3">Electricity Control</p>
+		</div>
+		<div id="g-ai0-52" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.3595%;margin-top:-9px;left:36.7742%;width:133px;">
+			<p class="g-pstyle3">Cosmic Awareness</p>
+		</div>
+		<div id="g-ai0-53" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.6726%;margin-top:-8px;left:73.9826%;width:79px;">
+			<p class="g-pstyle5">Telepathy</p>
+		</div>
+		<div id="g-ai0-54" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.707%;margin-top:-9px;left:8.2258%;width:111px;">
+			<p class="g-pstyle3">Vibration Wave</p>
+		</div>
+		<div id="g-ai0-55" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.4894%;margin-top:-9px;left:37.7419%;width:118px;">
+			<p class="g-pstyle3">Siphon Lifeforce</p>
+		</div>
+		<div id="g-ai0-56" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.4895%;margin-top:-8px;left:74.685%;width:68px;">
+			<p class="g-pstyle5">Psychic</p>
+		</div>
+		<div id="g-ai0-57" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.3674%;margin-top:-9px;left:7.9144%;width:114px;">
+			<p class="g-pstyle4">Light Projection</p>
+		</div>
+		<div id="g-ai0-58" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.4628%;margin-top:-9px;left:38.0645%;width:115px;">
+			<p class="g-pstyle3">Soul Absorption</p>
+		</div>
+		<div id="g-ai0-59" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.4628%;margin-top:-8px;left:74.7199%;width:65px;">
+			<p class="g-pstyle5">Psionic</p>
+		</div>
+		<div id="g-ai0-60" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.1233%;margin-top:-8px;left:73.4844%;width:86px;">
+			<p class="g-pstyle5">Mesmerize</p>
+		</div>
+		<div id="g-ai0-61" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.2797%;margin-top:-9px;left:38.3208%;width:106px;">
+			<p class="g-pstyle4">Divine Powers</p>
+		</div>
+		<div id="g-ai0-62" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.9401%;margin-top:-9px;left:41.746%;width:57px;">
+			<p class="g-pstyle4">Magic</p>
+		</div>
+		<div id="g-ai0-63" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.9402%;margin-top:-8px;left:72.8079%;width:96px;">
+			<p class="g-pstyle5">Precognition</p>
+		</div>
+		<div id="g-ai0-64" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:78.3846%;margin-top:-10.9px;left:0.5398%;width:233px;">
+			<p class="g-pstyle1">Physics or reality manipulation</p>
+		</div>
+		<div id="g-ai0-65" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.6006%;margin-top:-8px;left:71.4195%;width:117px;">
+			<p class="g-pstyle5">Emotion Control</p>
+		</div>
+		<div id="g-ai0-66" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.5395%;margin-top:-9px;left:10.3226%;width:91px;">
+			<p class="g-pstyle3">Time Travel</p>
+		</div>
+		<div id="g-ai0-67" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.261%;margin-top:-8px;left:71.9657%;width:113px;">
+			<p class="g-pstyle5">Illusion Casting</p>
+		</div>
+		<div id="g-ai0-68" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.3314%;margin-top:-10.9px;left:37.6488%;width:116px;">
+			<p class="g-pstyle1">Shapeshifting</p>
+		</div>
+		<div id="g-ai0-69" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.5129%;margin-top:-9px;left:3.5484%;width:174px;">
+			<p class="g-pstyle3">Dimensional Manipulation</p>
+		</div>
+		<div id="g-ai0-70" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.3298%;margin-top:-9px;left:4.8034%;width:157px;">
+			<p class="g-pstyle4">Darkness Manipulation</p>
+		</div>
+		<div id="g-ai0-71" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.6428%;margin-top:-9px;left:37.0968%;width:127px;">
+			<p class="g-pstyle3">Size Manipulation</p>
+		</div>
+		<div id="g-ai0-72" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.3392%;margin-top:-10.9px;left:57.5436%;width:276px;">
+			<p class="g-pstyle1">Elemental and environmental powers</p>
+		</div>
+		<div id="g-ai0-73" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:90.7727%;margin-top:-9px;left:38.533%;width:103px;">
+			<p class="g-pstyle4">Shape Shifter</p>
+		</div>
+		<div id="g-ai0-74" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.4941%;margin-top:-9px;left:72.1261%;width:103px;">
+			<p class="g-pstyle4">Water Control</p>
+		</div>
+		<div id="g-ai0-75" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.311%;margin-top:-9px;left:72.3697%;width:99px;">
+			<p class="g-pstyle4">Plant Control</p>
+		</div>
+		<div id="g-ai0-76" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.563%;margin-top:-9px;left:2.5359%;width:135px;">
+			<p class="g-pstyle6">Source: The Pudding</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-templates2-laptop" class="g-artboard" style="width:490px; height:732px;" data-aspect-ratio="0.669" data-min-width="490" data-max-width="619">
+		<img id="g-templates2-laptop-img" class="g-aiImg g-aiAbs" alt="" src="templates2-laptop.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.031%;margin-top:-21.8px;left:48.859%;margin-left:-203px;width:406px;">
+			<p class="g-pstyle0">Superpowers Per Category:</p>
+			<p class="g-pstyle0">Which Gender Does Each Individual Power Favor?</p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:13.2823%;margin-top:-12.2px;left:47.2501%;width:58px;">
+			<p class="g-pstyle1">Male</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.9708%;margin-top:-12.2px;left:47.2501%;width:77px;">
+			<p class="g-pstyle1">Female</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:27.6881%;margin-top:-27.7px;left:82.5339%;margin-left:-55.5px;width:111px;">
+			<p class="g-pstyle2">Supernatural</p>
+			<p class="g-pstyle2">physical</p>
+			<p class="g-pstyle2">abilities</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3932%;margin-top:-10.9px;left:10.8968%;width:74px;">
+			<p class="g-pstyle3">Objects</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.5297%;margin-top:-10.9px;left:30.4173%;width:209px;">
+			<p class="g-pstyle3">Enhanced physical abilities</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.8303%;margin-top:-9px;left:11.1224%;width:72px;">
+			<p class="g-pstyle4">Gadgets</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.9668%;margin-top:-9px;left:49.1203%;margin-left:-35px;width:70px;">
+			<p class="g-pstyle5">Stamina</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.2893%;margin-top:-9px;left:10.102%;width:86px;">
+			<p class="g-pstyle4">Power Suit</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.4258%;margin-top:-9px;left:49.1928%;margin-left:-67px;width:134px;">
+			<p class="g-pstyle5">Berserker Strength</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.3822%;margin-top:-9px;left:74.3878%;width:104px;">
+			<p class="g-pstyle4">Invulnerability</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.8849%;margin-top:-9px;left:49.1857%;margin-left:-49.5px;width:99px;">
+			<p class="g-pstyle5">Super Eating</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.8849%;margin-top:-9px;left:10.102%;width:89px;">
+			<p class="g-pstyle4">Power Item</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.8411%;margin-top:-9px;left:76.8367%;width:72px;">
+			<p class="g-pstyle4">Strength</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.4805%;margin-top:-9px;left:11.3265%;width:72px;">
+			<p class="g-pstyle4">Implants</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.6171%;margin-top:-9px;left:49.1436%;margin-left:-56.5px;width:113px;">
+			<p class="g-pstyle5">Siphon Abilities</p>
+		</div>
+		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.4368%;margin-top:-9px;left:78.4694%;width:52px;">
+			<p class="g-pstyle4">Feral</p>
+		</div>
+		<div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.9396%;margin-top:-9px;left:9.0816%;width:102px;">
+			<p class="g-pstyle4">Insanely Rich</p>
+		</div>
+		<div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.2127%;margin-top:-9px;left:49.1665%;margin-left:-39.5px;width:79px;">
+			<p class="g-pstyle5">Longevity</p>
+		</div>
+		<div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.0325%;margin-top:-9px;left:76.8367%;width:73px;">
+			<p class="g-pstyle4">Adaptive</p>
+		</div>
+		<div id="g-ai1-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.8083%;margin-top:-9px;left:44.7602%;width:58px;">
+			<p class="g-pstyle6">Agility</p>
+		</div>
+		<div id="g-ai1-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:42.6281%;margin-top:-9px;left:71.7347%;width:126px;">
+			<p class="g-pstyle4">Matter Absorption</p>
+		</div>
+		<div id="g-ai1-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.2128%;margin-top:-19.3px;left:16.7843%;margin-left:-55px;width:110px;">
+			<p class="g-pstyle2">Energy</p>
+			<p class="g-pstyle2">manipulation</p>
+		</div>
+		<div id="g-ai1-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.3603%;margin-top:-9px;left:71.7347%;width:128px;">
+			<p class="g-pstyle4">Enhance Mutation</p>
+		</div>
+		<div id="g-ai1-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.9778%;margin-top:-10.9px;left:36.7323%;width:130px;">
+			<p class="g-pstyle3">Enhanced skills</p>
+		</div>
+		<div id="g-ai1-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:47.8193%;margin-top:-9px;left:75.2041%;width:88px;">
+			<p class="g-pstyle4">Duplication</p>
+		</div>
+		<div id="g-ai1-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.8685%;margin-top:-9px;left:8.8776%;width:93px;">
+			<p class="g-pstyle4">Blast Power</p>
+		</div>
+		<div id="g-ai1-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.0051%;margin-top:-9px;left:40.7143%;width:87px;">
+			<p class="g-pstyle4">Leadership</p>
+		</div>
+		<div id="g-ai1-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.415%;margin-top:-9px;left:74.3878%;width:101px;">
+			<p class="g-pstyle4">Flame Breath</p>
+		</div>
+		<div id="g-ai1-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.1909%;margin-top:-9px;left:5.4082%;width:130px;">
+			<p class="g-pstyle4">Energy Absorption</p>
+		</div>
+		<div id="g-ai1-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.4641%;margin-top:-9px;left:41.9388%;width:72px;">
+			<p class="g-pstyle4">Tracking</p>
+		</div>
+		<div id="g-ai1-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.0106%;margin-top:-9px;left:75.2041%;width:90px;">
+			<p class="g-pstyle4">Heat Vision</p>
+		</div>
+		<div id="g-ai1-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:54.7866%;margin-top:-9px;left:10.102%;width:78px;">
+			<p class="g-pstyle4">Radiation</p>
+		</div>
+		<div id="g-ai1-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.0597%;margin-top:-9px;left:39.6939%;width:97px;">
+			<p class="g-pstyle4">Omni-lingual</p>
+		</div>
+		<div id="g-ai1-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.6062%;margin-top:-9px;left:70.5102%;width:147px;">
+			<p class="g-pstyle4">Genetic Manipulation</p>
+		</div>
+		<div id="g-ai1-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.109%;margin-top:-9px;left:9.0816%;width:89px;">
+			<p class="g-pstyle4">Force Field</p>
+		</div>
+		<div id="g-ai1-37" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.5187%;margin-top:-9px;left:39.6939%;width:100px;">
+			<p class="g-pstyle4">Escape Artist</p>
+		</div>
+		<div id="g-ai1-38" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.9286%;margin-top:-9px;left:75.8163%;width:86px;">
+			<p class="g-pstyle4">Magnetism</p>
+		</div>
+		<div id="g-ai1-39" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.2948%;margin-top:-9px;left:2.7551%;width:165px;">
+			<p class="g-pstyle4">Energy-Enhanced Strike</p>
+		</div>
+		<div id="g-ai1-40" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.8411%;margin-top:-9px;left:39.6939%;width:107px;">
+			<p class="g-pstyle4">Marksmanship</p>
+		</div>
+		<div id="g-ai1-41" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.3876%;margin-top:-9px;left:78.7851%;width:55px;">
+			<p class="g-pstyle6">Flight</p>
+		</div>
+		<div id="g-ai1-42" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.7538%;margin-top:-9px;left:6.2245%;width:127px;">
+			<p class="g-pstyle4">Electricity Control</p>
+		</div>
+		<div id="g-ai1-43" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.0269%;margin-top:-9px;left:42.7627%;width:69px;">
+			<p class="g-pstyle6">Intellect</p>
+		</div>
+		<div id="g-ai1-44" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.4368%;margin-top:-9px;left:70.4666%;width:136px;">
+			<p class="g-pstyle6">Pheromone Control</p>
+		</div>
+		<div id="g-ai1-45" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.0761%;margin-top:-9px;left:37.4651%;width:125px;">
+			<p class="g-pstyle6">Unarmed Combat</p>
+		</div>
+		<div id="g-ai1-46" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.0762%;margin-top:-9px;left:7.449%;width:111px;">
+			<p class="g-pstyle4">Vibration Wave</p>
+		</div>
+		<div id="g-ai1-47" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:64.6226%;margin-top:-9px;left:74.3375%;width:104px;">
+			<p class="g-pstyle6">Sonic Scream</p>
+		</div>
+		<div id="g-ai1-48" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.2619%;margin-top:-9px;left:38.3382%;width:115px;">
+			<p class="g-pstyle6">Swordsmanship</p>
+		</div>
+		<div id="g-ai1-49" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.3986%;margin-top:-9px;left:7.055%;width:114px;">
+			<p class="g-pstyle6">Light Projection</p>
+		</div>
+		<div id="g-ai1-50" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.945%;margin-top:-9px;left:73.395%;width:113px;">
+			<p class="g-pstyle6">Prehensile Hair</p>
+		</div>
+		<div id="g-ai1-51" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.9778%;margin-top:-10.9px;left:44.0882%;width:65px;">
+			<p class="g-pstyle3">Divine</p>
+		</div>
+		<div id="g-ai1-52" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:73.3985%;margin-top:-19.3px;left:18.2422%;margin-left:-78.5px;width:157px;">
+			<p class="g-pstyle2">Physics or </p>
+			<p class="g-pstyle2">reality manipulation</p>
+		</div>
+		<div id="g-ai1-53" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.251%;margin-top:-10.9px;left:71.8893%;width:122px;">
+			<p class="g-pstyle3">Mental powers</p>
+		</div>
+		<div id="g-ai1-54" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.7319%;margin-top:-8px;left:76.2321%;width:74px;">
+			<p class="g-pstyle7">Empathy</p>
+		</div>
+		<div id="g-ai1-55" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.8685%;margin-top:-9px;left:37.2449%;width:133px;">
+			<p class="g-pstyle4">Cosmic Awareness</p>
+		</div>
+		<div id="g-ai1-56" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.1909%;margin-top:-8px;left:75.7535%;width:79px;">
+			<p class="g-pstyle7">Telepathy</p>
+		</div>
+		<div id="g-ai1-57" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.3275%;margin-top:-9px;left:10.7143%;width:91px;">
+			<p class="g-pstyle4">Time Travel</p>
+		</div>
+		<div id="g-ai1-58" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.6007%;margin-top:-9px;left:38.4694%;width:118px;">
+			<p class="g-pstyle4">Siphon Lifeforce</p>
+		</div>
+		<div id="g-ai1-59" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.6499%;margin-top:-8px;left:76.6422%;width:68px;">
+			<p class="g-pstyle7">Psychic</p>
+		</div>
+		<div id="g-ai1-60" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.9232%;margin-top:-9px;left:2.1429%;width:174px;">
+			<p class="g-pstyle4">Dimensional Manipulation</p>
+		</div>
+		<div id="g-ai1-61" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.1963%;margin-top:-9px;left:38.8776%;width:115px;">
+			<p class="g-pstyle4">Soul Absorption</p>
+		</div>
+		<div id="g-ai1-62" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.2456%;margin-top:-8px;left:76.6865%;width:65px;">
+			<p class="g-pstyle7">Psionic</p>
+		</div>
+		<div id="g-ai1-63" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.3822%;margin-top:-9px;left:3.7309%;width:157px;">
+			<p class="g-pstyle6">Darkness Manipulation</p>
+		</div>
+		<div id="g-ai1-64" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:82.6553%;margin-top:-9px;left:39.2018%;width:106px;">
+			<p class="g-pstyle6">Divine Powers</p>
+		</div>
+		<div id="g-ai1-65" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.568%;margin-top:-8px;left:75.1232%;width:86px;">
+			<p class="g-pstyle7">Mesmerize</p>
+		</div>
+		<div id="g-ai1-66" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:84.9777%;margin-top:-9px;left:43.5358%;width:57px;">
+			<p class="g-pstyle6">Magic</p>
+		</div>
+		<div id="g-ai1-67" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:87.027%;margin-top:-8px;left:74.2672%;width:96px;">
+			<p class="g-pstyle7">Precognition</p>
+		</div>
+		<div id="g-ai1-68" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.3494%;margin-top:-8px;left:72.5104%;width:117px;">
+			<p class="g-pstyle7">Emotion Control</p>
+		</div>
+		<div id="g-ai1-69" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.6007%;margin-top:-10.9px;left:7.331%;width:116px;">
+			<p class="g-pstyle3">Shapeshifting</p>
+		</div>
+		<div id="g-ai1-70" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:90.7204%;margin-top:-18.1px;left:46.8292%;margin-left:-73px;width:146px;">
+			<p class="g-pstyle8">Elemental and </p>
+			<p class="g-pstyle8">environmental powers</p>
+		</div>
+		<div id="g-ai1-71" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.6718%;margin-top:-8px;left:73.2015%;width:113px;">
+			<p class="g-pstyle7">Illusion Casting</p>
+		</div>
+		<div id="g-ai1-72" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.4915%;margin-top:-9px;left:6.6327%;width:127px;">
+			<p class="g-pstyle4">Size Manipulation</p>
+		</div>
+		<div id="g-ai1-73" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.5407%;margin-top:-9px;left:39.1187%;width:89px;">
+			<p class="g-pstyle6">Water Control</p>
+		</div>
+		<div id="g-ai1-74" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.2237%;margin-top:-9px;left:8.4499%;width:103px;">
+			<p class="g-pstyle6">Shape Shifter</p>
+		</div>
+		<div id="g-ai1-75" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.1363%;margin-top:-9px;left:39.427%;width:85px;">
+			<p class="g-pstyle6">Plant Control</p>
+		</div>
+		<div id="g-ai1-76" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:97.956%;margin-top:-9px;left:75.1475%;width:135px;">
+			<p class="g-pstyle9">Source: The Pudding</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-templates2-mobile" class="g-artboard" style="width:375px; height:1903.8px;" data-aspect-ratio="0.197" data-min-width="375" data-max-width="489">
+		<img id="g-templates2-mobile-img" class="g-aiImg g-aiAbs" alt="" src="templates2-mobile.png"/>
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:1.7101%;margin-top:-20.6px;left:50.1099%;margin-left:-191px;width:382px;">
+			<p class="g-pstyle0">Superpowers Per Category:</p>
+			<p class="g-pstyle0">Which Gender Does Each Individual Power Favor?</p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.5797%;margin-top:-12.2px;left:47.7401%;width:58px;">
+			<p class="g-pstyle1">Male</p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:6.9979%;margin-top:-12.2px;left:47.7401%;width:77px;">
+			<p class="g-pstyle1">Female</p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:10.6039%;margin-top:-10.9px;left:42.3719%;width:74px;">
+			<p class="g-pstyle2">Objects</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:11.9255%;margin-top:-9px;left:42.6667%;width:72px;">
+			<p class="g-pstyle3">Gadgets</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:12.871%;margin-top:-9px;left:41.3333%;width:86px;">
+			<p class="g-pstyle3">Power Suit</p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:13.869%;margin-top:-9px;left:41.3333%;width:89px;">
+			<p class="g-pstyle3">Power Item</p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:14.867%;margin-top:-9px;left:42.9333%;width:72px;">
+			<p class="g-pstyle3">Implants</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:15.8125%;margin-top:-9px;left:40%;width:102px;">
+			<p class="g-pstyle3">Insanely Rich</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:18.693%;margin-top:-10.9px;left:25.4786%;width:209px;">
+			<p class="g-pstyle2">Enhanced physical abilities</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.0146%;margin-top:-9px;left:49.9172%;margin-left:-35px;width:70px;">
+			<p class="g-pstyle4">Stamina</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.96%;margin-top:-9px;left:50.012%;margin-left:-67px;width:134px;">
+			<p class="g-pstyle4">Berserker Strength</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:21.9055%;margin-top:-9px;left:50.0026%;margin-left:-49.5px;width:99px;">
+			<p class="g-pstyle4">Super Eating</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:22.956%;margin-top:-9px;left:49.9477%;margin-left:-56.5px;width:113px;">
+			<p class="g-pstyle4">Siphon Abilities</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:23.954%;margin-top:-9px;left:49.9776%;margin-left:-39.5px;width:79px;">
+			<p class="g-pstyle4">Longevity</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:24.952%;margin-top:-9px;left:44.2201%;width:58px;">
+			<p class="g-pstyle5">Agility</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:27.591%;margin-top:-19.3px;left:49.2648%;margin-left:-55px;width:110px;">
+			<p class="g-pstyle6">Energy</p>
+			<p class="g-pstyle6">manipulation</p>
+		</div>
+		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.9966%;margin-top:-9px;left:38.9333%;width:93px;">
+			<p class="g-pstyle3">Blast Power</p>
+		</div>
+		<div id="g-ai2-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:29.8896%;margin-top:-9px;left:34.4%;width:130px;">
+			<p class="g-pstyle3">Energy Absorption</p>
+		</div>
+		<div id="g-ai2-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:30.8876%;margin-top:-9px;left:40.5333%;width:78px;">
+			<p class="g-pstyle3">Radiation</p>
+		</div>
+		<div id="g-ai2-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.7805%;margin-top:-9px;left:39.2%;width:89px;">
+			<p class="g-pstyle3">Force Field</p>
+		</div>
+		<div id="g-ai2-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:32.6209%;margin-top:-9px;left:30.9333%;width:165px;">
+			<p class="g-pstyle3">Energy-Enhanced Strike</p>
+		</div>
+		<div id="g-ai2-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:33.5664%;margin-top:-9px;left:35.4667%;width:127px;">
+			<p class="g-pstyle3">Electricity Control</p>
+		</div>
+		<div id="g-ai2-24" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:34.4594%;margin-top:-9px;left:37.0667%;width:111px;">
+			<p class="g-pstyle3">Vibration Wave</p>
+		</div>
+		<div id="g-ai2-25" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.3523%;margin-top:-9px;left:36.5518%;width:114px;">
+			<p class="g-pstyle5">Light Projection</p>
+		</div>
+		<div id="g-ai2-26" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:37.9912%;margin-top:-19.3px;left:49.5698%;margin-left:-78.5px;width:157px;">
+			<p class="g-pstyle6">Physics or </p>
+			<p class="g-pstyle6">reality manipulation</p>
+		</div>
+		<div id="g-ai2-27" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:39.5544%;margin-top:-9px;left:39.7333%;width:91px;">
+			<p class="g-pstyle3">Time Travel</p>
+		</div>
+		<div id="g-ai2-28" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.5525%;margin-top:-9px;left:28.5333%;width:174px;">
+			<p class="g-pstyle3">Dimensional Manipulation</p>
+		</div>
+		<div id="g-ai2-29" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:41.4979%;margin-top:-9px;left:30.6083%;width:157px;">
+			<p class="g-pstyle5">Darkness Manipulation</p>
+		</div>
+		<div id="g-ai2-30" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:43.9057%;margin-top:-10.9px;left:34.7792%;width:116px;">
+			<p class="g-pstyle2">Shapeshifting</p>
+		</div>
+		<div id="g-ai2-31" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:45.0172%;margin-top:-9px;left:33.8667%;width:127px;">
+			<p class="g-pstyle3">Size Manipulation</p>
+		</div>
+		<div id="g-ai2-32" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.0677%;margin-top:-9px;left:36.2411%;width:103px;">
+			<p class="g-pstyle5">Shape Shifter</p>
+		</div>
+		<div id="g-ai2-33" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.5806%;margin-top:-10.9px;left:41.2086%;width:65px;">
+			<p class="g-pstyle2">Divine</p>
+		</div>
+		<div id="g-ai2-34" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:49.692%;margin-top:-9px;left:32.2667%;width:133px;">
+			<p class="g-pstyle3">Cosmic Awareness</p>
+		</div>
+		<div id="g-ai2-35" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:50.7426%;margin-top:-9px;left:33.8667%;width:118px;">
+			<p class="g-pstyle3">Siphon Lifeforce</p>
+		</div>
+		<div id="g-ai2-36" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:51.7406%;margin-top:-9px;left:34.4%;width:115px;">
+			<p class="g-pstyle3">Soul Absorption</p>
+		</div>
+		<div id="g-ai2-37" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.6861%;margin-top:-9px;left:34.8237%;width:106px;">
+			<p class="g-pstyle5">Divine Powers</p>
+		</div>
+		<div id="g-ai2-38" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:53.579%;margin-top:-9px;left:40.4867%;width:57px;">
+			<p class="g-pstyle5">Magic</p>
+		</div>
+		<div id="g-ai2-39" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.9868%;margin-top:-10.9px;left:31.0635%;width:130px;">
+			<p class="g-pstyle2">Enhanced skills</p>
+		</div>
+		<div id="g-ai2-40" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.1508%;margin-top:-9px;left:36.2667%;width:87px;">
+			<p class="g-pstyle3">Leadership</p>
+		</div>
+		<div id="g-ai2-41" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:58.0963%;margin-top:-9px;left:37.8667%;width:72px;">
+			<p class="g-pstyle3">Tracking</p>
+		</div>
+		<div id="g-ai2-42" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:59.0943%;margin-top:-9px;left:34.9333%;width:97px;">
+			<p class="g-pstyle3">Omni-lingual</p>
+		</div>
+		<div id="g-ai2-43" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.0398%;margin-top:-9px;left:34.9333%;width:100px;">
+			<p class="g-pstyle3">Escape Artist</p>
+		</div>
+		<div id="g-ai2-44" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.9327%;margin-top:-9px;left:34.9333%;width:107px;">
+			<p class="g-pstyle3">Marksmanship</p>
+		</div>
+		<div id="g-ai2-45" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:61.7731%;margin-top:-9px;left:38.9432%;width:69px;">
+			<p class="g-pstyle5">Intellect</p>
+		</div>
+		<div id="g-ai2-46" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:62.561%;margin-top:-9px;left:32.0211%;width:125px;">
+			<p class="g-pstyle5">Unarmed Combat</p>
+		</div>
+		<div id="g-ai2-47" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:63.4015%;margin-top:-9px;left:33.162%;width:115px;">
+			<p class="g-pstyle5">Swordsmanship</p>
+		</div>
+		<div id="g-ai2-48" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.324%;margin-top:-27.7px;left:45.8443%;margin-left:-55.5px;width:111px;">
+			<p class="g-pstyle6">Supernatural</p>
+			<p class="g-pstyle6">physical</p>
+			<p class="g-pstyle6">abilities</p>
+		</div>
+		<div id="g-ai2-49" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.1289%;margin-top:-9px;left:35.2%;width:104px;">
+			<p class="g-pstyle3">Invulnerability</p>
+		</div>
+		<div id="g-ai2-50" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:69.0743%;margin-top:-9px;left:38.4%;width:72px;">
+			<p class="g-pstyle3">Strength</p>
+		</div>
+		<div id="g-ai2-51" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:70.0724%;margin-top:-9px;left:40.5333%;width:52px;">
+			<p class="g-pstyle3">Feral</p>
+		</div>
+		<div id="g-ai2-52" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:71.0704%;margin-top:-9px;left:38.4%;width:73px;">
+			<p class="g-pstyle3">Adaptive</p>
+		</div>
+		<div id="g-ai2-53" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:72.0684%;margin-top:-9px;left:31.7333%;width:126px;">
+			<p class="g-pstyle3">Matter Absorption</p>
+		</div>
+		<div id="g-ai2-54" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:73.1189%;margin-top:-9px;left:31.7333%;width:128px;">
+			<p class="g-pstyle3">Enhance Mutation</p>
+		</div>
+		<div id="g-ai2-55" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.0644%;margin-top:-9px;left:36.2667%;width:88px;">
+			<p class="g-pstyle3">Duplication</p>
+		</div>
+		<div id="g-ai2-56" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.0624%;margin-top:-9px;left:35.2%;width:101px;">
+			<p class="g-pstyle3">Flame Breath</p>
+		</div>
+		<div id="g-ai2-57" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.0604%;margin-top:-9px;left:36.2667%;width:90px;">
+			<p class="g-pstyle3">Heat Vision</p>
+		</div>
+		<div id="g-ai2-58" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.0584%;margin-top:-9px;left:30.1333%;width:147px;">
+			<p class="g-pstyle3">Genetic Manipulation</p>
+		</div>
+		<div id="g-ai2-59" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:77.9513%;margin-top:-9px;left:37.0667%;width:86px;">
+			<p class="g-pstyle3">Magnetism</p>
+		</div>
+		<div id="g-ai2-60" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:78.8968%;margin-top:-9px;left:40.9458%;width:55px;">
+			<p class="g-pstyle5">Flight</p>
+		</div>
+		<div id="g-ai2-61" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:79.6847%;margin-top:-9px;left:30.0763%;width:136px;">
+			<p class="g-pstyle5">Pheromone Control</p>
+		</div>
+		<div id="g-ai2-62" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:80.5251%;margin-top:-9px;left:35.1344%;width:104px;">
+			<p class="g-pstyle5">Sonic Scream</p>
+		</div>
+		<div id="g-ai2-63" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:81.4181%;margin-top:-9px;left:33.9029%;width:113px;">
+			<p class="g-pstyle5">Prehensile Hair</p>
+		</div>
+		<div id="g-ai2-64" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:83.8887%;margin-top:-18.1px;left:47.1901%;margin-left:-73px;width:146px;">
+			<p class="g-pstyle7">Elemental and </p>
+			<p class="g-pstyle7">environmental powers</p>
+		</div>
+		<div id="g-ai2-65" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.3576%;margin-top:-9px;left:37.1151%;width:89px;">
+			<p class="g-pstyle5">Water Control</p>
+		</div>
+		<div id="g-ai2-66" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.3556%;margin-top:-9px;left:37.518%;width:85px;">
+			<p class="g-pstyle5">Plant Control</p>
+		</div>
+		<div id="g-ai2-67" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:88.8684%;margin-top:-10.9px;left:33.8021%;width:122px;">
+			<p class="g-pstyle2">Mental powers</p>
+		</div>
+		<div id="g-ai2-68" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:89.8223%;margin-top:-8px;left:39.4766%;width:74px;">
+			<p class="g-pstyle8">Empathy</p>
+		</div>
+		<div id="g-ai2-69" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:90.7678%;margin-top:-8px;left:38.8513%;width:79px;">
+			<p class="g-pstyle8">Telepathy</p>
+		</div>
+		<div id="g-ai2-70" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:91.7133%;margin-top:-8px;left:40.0125%;width:68px;">
+			<p class="g-pstyle8">Psychic</p>
+		</div>
+		<div id="g-ai2-71" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:92.7113%;margin-top:-8px;left:40.0703%;width:65px;">
+			<p class="g-pstyle8">Psionic</p>
+		</div>
+		<div id="g-ai2-72" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:93.6042%;margin-top:-8px;left:38.0276%;width:86px;">
+			<p class="g-pstyle8">Mesmerize</p>
+		</div>
+		<div id="g-ai2-73" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:94.5497%;margin-top:-8px;left:36.9091%;width:96px;">
+			<p class="g-pstyle8">Precognition</p>
+		</div>
+		<div id="g-ai2-74" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.4427%;margin-top:-8px;left:34.6135%;width:117px;">
+			<p class="g-pstyle8">Emotion Control</p>
+		</div>
+		<div id="g-ai2-75" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.3356%;margin-top:-8px;left:35.5167%;width:113px;">
+			<p class="g-pstyle8">Illusion Casting</p>
+		</div>
+		<div id="g-ai2-76" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:98.7518%;margin-top:-9px;left:32.9927%;width:135px;">
+			<p class="g-pstyle9">Source: The Pudding</p>
+		</div>
+	</div>
+
+</div>
+<br>
+<br>
+
+<!-- End ai2html - 2019-09-15 19:24 -->
+
+        
+                </div>
+            </div>
+        </div>
+    
+
+        <div class="story-body">
+                <p class="body-text serif">Character monikers follow a similar pattern to team names. Consider some of the most popular comic characters of all time: Batman, Wonder Woman, Ms. Marvel and Spider-Man. Eight percent of both male and female characters have gendered names. However, not all gendered names are equal; some fit a “diminutive” category. These are titles that are the younger, or infantilized versions of another name. For example, “girl” is the diminutive version of woman.</p>
+                <p class="body-text serif">Let‘s look at the percent of female and male characters with equivalent gendered names. For example, we have paired “man” and “woman” as equivalent. Their usage, however, is not balanced: male characters are given “man” far more often than female characters are given “woman”.</p>
+            </div>
+              
+            <div class="chart-section">
+                    <div class="chart-row">
+                        <div class="chart">
+                
+                            <!-- AI2HTML content goes here -->
+
+                            <!-- Generated by ai2html v0.89.0 - 2019-09-15 19:25 -->
+<!-- ai file: templates3.ai -->
+<style type='text/css' media='screen,print'>
+	#g-templates3-box .g-artboard {
+		margin:0 auto;
+	}
+	#g-templates3-box p {
+		margin:0;
+	}
+	.g-aiAbs {
+		position:absolute;
+	}
+	.g-aiImg {
+		display:block;
+		width:100% !important;
+	}
+	.g-aiSymbol {
+		position: absolute;
+		box-sizing: border-box;
+	}
+	.g-aiPointText p { white-space: nowrap; }
+	#g-templates3-medium {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates3-medium p {
+		font-family:Helvetica;
+		font-weight:200;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates3-medium .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		text-align:center;
+	}
+	#g-templates3-medium .g-pstyle1 {
+		font-weight:500;
+		font-size:14px;
+		line-height:17px;
+		height:17px;
+	}
+	#g-templates3-medium .g-pstyle2 {
+		height:14px;
+		letter-spacing:0.05em;
+	}
+	#g-templates3-medium .g-pstyle3 {
+		height:14px;
+	}
+	#g-templates3-medium .g-pstyle4 {
+		font-weight:500;
+		height:14px;
+		letter-spacing:0.05em;
+		color:rgb(128,128,128);
+	}
+	#g-templates3-medium .g-pstyle5 {
+		font-weight:500;
+		height:14px;
+	}
+	#g-templates3-laptop {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates3-laptop p {
+		font-family:Helvetica;
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates3-laptop .g-pstyle0 {
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:19px;
+		text-align:center;
+	}
+	#g-templates3-laptop .g-pstyle1 {
+		height:14px;
+		text-align:center;
+	}
+	#g-templates3-laptop .g-pstyle2 {
+		height:14px;
+	}
+	#g-templates3-laptop .g-pstyle3 {
+		font-weight:200;
+		height:14px;
+		letter-spacing:0.05em;
+	}
+	#g-templates3-laptop .g-pstyle4 {
+		height:14px;
+		letter-spacing:0.05em;
+		color:rgb(128,128,128);
+	}
+	#g-templates3-mobile {
+		position:relative;
+		overflow:hidden;
+	}
+	#g-templates3-mobile p {
+		font-family:Helvetica;
+		font-weight:700;
+		font-size:16px;
+		line-height:19px;
+		height:auto;
+		filter:alpha(opacity=100);
+		-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+		opacity:1;
+		letter-spacing:0em;
+		text-align:left;
+		color:rgb(0,0,0);
+		text-transform:none;
+		padding-bottom:0;
+		padding-top:0;
+		mix-blend-mode:normal;
+		font-style:normal;
+		position:static;
+	}
+	#g-templates3-mobile .g-pstyle0 {
+		height:19px;
+		text-align:center;
+	}
+	#g-templates3-mobile .g-pstyle1 {
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:14px;
+	}
+	#g-templates3-mobile .g-pstyle2 {
+		font-weight:200;
+		font-size:12px;
+		line-height:14px;
+		height:14px;
+		letter-spacing:0.05em;
+	}
+	#g-templates3-mobile .g-pstyle3 {
+		font-weight:500;
+		font-size:12px;
+		line-height:14px;
+		height:14px;
+		letter-spacing:0.05em;
+		color:rgb(128,128,128);
+	}
+
+</style>
+
+<div id="g-templates3-box" class="ai2html">
+
+	<!-- Artboard: medium -->
+	<div id="g-templates3-medium" class="g-artboard" style="width:620px; height:573px;" data-aspect-ratio="1.082" data-min-width="620">
+		<img id="g-templates3-medium-img" class="g-aiImg g-aiAbs" alt="" src="templates3-medium.png"/>
+		<div id="g-ai0-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:6.6713%;margin-top:-12.2px;left:49.9691%;margin-left:-282px;width:564px;">
+			<p class="g-pstyle0">Percentage of Each Diminutive Name Used for Comic Book Characters </p>
+		</div>
+		<div id="g-ai0-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:11.1479%;margin-top:-10.9px;left:5.1348%;width:574px;">
+			<p class="g-pstyle1">There are more names that infantilize women than men -- at a higher percentage rate too</p>
+		</div>
+		<div id="g-ai0-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.2938%;margin-top:-8.3px;left:17.9983%;width:48px;">
+			<p class="g-pstyle2">20%</p>
+		</div>
+		<div id="g-ai0-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.2938%;margin-top:-8.3px;left:32.0297%;width:48px;">
+			<p class="g-pstyle2">10%</p>
+		</div>
+		<div id="g-ai0-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.2938%;margin-top:-8.3px;left:46.6476%;width:41px;">
+			<p class="g-pstyle2">0%</p>
+		</div>
+		<div id="g-ai0-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.2938%;margin-top:-8.3px;left:60.0926%;width:48px;">
+			<p class="g-pstyle2">10%</p>
+		</div>
+		<div id="g-ai0-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:20.2938%;margin-top:-8.3px;left:74.1241%;width:48px;">
+			<p class="g-pstyle2">20%</p>
+		</div>
+		<div id="g-ai0-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.1402%;margin-top:-37.1px;left:83.2258%;width:97px;">
+			<p class="g-pstyle3">'Boy' is used</p>
+			<p class="g-pstyle3">half as much, </p>
+			<p class="g-pstyle3">showing up </p>
+			<p class="g-pstyle3">sixth for </p>
+			<p class="g-pstyle3">males</p>
+		</div>
+		<div id="g-ai0-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.4201%;margin-top:-9px;left:25.263%;width:40px;">
+			<p class="g-pstyle4">girl</p>
+		</div>
+		<div id="g-ai0-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:31.4201%;margin-top:-9px;left:57.6581%;width:43px;">
+			<p class="g-pstyle4">boy</p>
+		</div>
+		<div id="g-ai0-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:40.0845%;margin-top:-58.7px;left:5.3226%;width:83px;">
+			<p class="g-pstyle3">'Girl' is the </p>
+			<p class="g-pstyle3">third-most </p>
+			<p class="g-pstyle3">common </p>
+			<p class="g-pstyle3">gendered </p>
+			<p class="g-pstyle3">name for a </p>
+			<p class="g-pstyle3">female </p>
+			<p class="g-pstyle3">character</p>
+		</div>
+		<div id="g-ai0-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:38.9245%;margin-top:-9px;left:31.6644%;width:49px;">
+			<p class="g-pstyle4">miss</p>
+		</div>
+		<div id="g-ai0-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.8722%;margin-top:-9px;left:30.2009%;width:71px;">
+			<p class="g-pstyle4">princess</p>
+		</div>
+		<div id="g-ai0-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:48.8722%;margin-top:-9px;left:53.3686%;width:58px;">
+			<p class="g-pstyle4">prince</p>
+		</div>
+		<div id="g-ai0-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.7727%;margin-top:-9px;left:40.117%;width:46px;">
+			<p class="g-pstyle4">lass</p>
+		</div>
+		<div id="g-ai0-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:57.7727%;margin-top:-9px;left:52.7912%;width:40px;">
+			<p class="g-pstyle4">lad</p>
+		</div>
+		<div id="g-ai0-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:66.8477%;margin-top:-9px;left:40.8405%;width:43px;">
+			<p class="g-pstyle4">doll</p>
+		</div>
+		<div id="g-ai0-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.3992%;margin-top:-9px;left:36.5865%;width:74px;">
+			<p class="g-pstyle4">daughter</p>
+		</div>
+		<div id="g-ai0-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:75.3992%;margin-top:-9px;left:51.3888%;width:43px;">
+			<p class="g-pstyle4">son</p>
+		</div>
+		<div id="g-ai0-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.045%;margin-top:-9px;left:42.2158%;width:40px;">
+			<p class="g-pstyle4">gal</p>
+		</div>
+		<div id="g-ai0-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.045%;margin-top:-9px;left:50.8939%;width:43px;">
+			<p class="g-pstyle4">guy</p>
+		</div>
+		<div id="g-ai0-22" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.4691%;margin-top:-9px;left:54.4867%;width:55px;">
+			<p class="g-pstyle4">junior</p>
+		</div>
+		<div id="g-ai0-23" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:96.5162%;margin-top:-9px;left:79.2295%;width:135px;">
+			<p class="g-pstyle5">Source: The Pudding</p>
+		</div>
+	</div>
+
+	<!-- Artboard: laptop -->
+	<div id="g-templates3-laptop" class="g-artboard" style="width:490px; height:611.999999999998px;" data-aspect-ratio="0.801" data-min-width="490" data-max-width="619">
+		<img id="g-templates3-laptop-img" class="g-aiImg g-aiAbs" alt="" src="templates3-laptop.png"/>
+		<div id="g-ai1-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.2004%;margin-top:-21.8px;left:50.4313%;margin-left:-176.5px;width:353px;">
+			<p class="g-pstyle0">Percentage of Each Diminutive Name Used </p>
+			<p class="g-pstyle0">for Comic Book Characters </p>
+		</div>
+		<div id="g-ai1-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:12.2938%;margin-top:-16.2px;left:49.7475%;margin-left:-158px;width:316px;">
+			<p class="g-pstyle1">There are more names that infantilize women than men</p>
+			<p class="g-pstyle1">(at a higher percentage rate too)</p>
+		</div>
+		<div id="g-ai1-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:19.614%;margin-top:-9px;left:39.025%;width:135px;">
+			<p class="g-pstyle2">Source: The Pudding</p>
+		</div>
+		<div id="g-ai1-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3732%;margin-top:-8.3px;left:12.161%;width:48px;">
+			<p class="g-pstyle3">20%</p>
+		</div>
+		<div id="g-ai1-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3732%;margin-top:-8.3px;left:29.9151%;width:48px;">
+			<p class="g-pstyle3">10%</p>
+		</div>
+		<div id="g-ai1-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3732%;margin-top:-8.3px;left:48.4112%;width:41px;">
+			<p class="g-pstyle3">0%</p>
+		</div>
+		<div id="g-ai1-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3732%;margin-top:-8.3px;left:65.4233%;width:48px;">
+			<p class="g-pstyle3">10%</p>
+		</div>
+		<div id="g-ai1-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:25.3732%;margin-top:-8.3px;left:83.1774%;width:48px;">
+			<p class="g-pstyle3">20%</p>
+		</div>
+		<div id="g-ai1-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.7904%;margin-top:-9px;left:21.3532%;width:40px;">
+			<p class="g-pstyle4">girl</p>
+		</div>
+		<div id="g-ai1-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:35.7904%;margin-top:-9px;left:62.343%;width:43px;">
+			<p class="g-pstyle4">boy</p>
+		</div>
+		<div id="g-ai1-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:42.8166%;margin-top:-9px;left:29.4529%;width:49px;">
+			<p class="g-pstyle4">miss</p>
+		</div>
+		<div id="g-ai1-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.1303%;margin-top:-9px;left:27.6012%;width:71px;">
+			<p class="g-pstyle4">princess</p>
+		</div>
+		<div id="g-ai1-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:52.1303%;margin-top:-9px;left:56.9155%;width:58px;">
+			<p class="g-pstyle4">prince</p>
+		</div>
+		<div id="g-ai1-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.4637%;margin-top:-9px;left:40.1481%;width:46px;">
+			<p class="g-pstyle4">lass</p>
+		</div>
+		<div id="g-ai1-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:60.4637%;margin-top:-9px;left:56.1848%;width:40px;">
+			<p class="g-pstyle4">lad</p>
+		</div>
+		<div id="g-ai1-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:68.9604%;margin-top:-9px;left:41.0635%;width:43px;">
+			<p class="g-pstyle4">doll</p>
+		</div>
+		<div id="g-ai1-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.9669%;margin-top:-9px;left:35.681%;width:74px;">
+			<p class="g-pstyle4">daughter</p>
+		</div>
+		<div id="g-ai1-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:76.9669%;margin-top:-9px;left:54.4105%;width:43px;">
+			<p class="g-pstyle4">son</p>
+		</div>
+		<div id="g-ai1-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.9342%;margin-top:-9px;left:42.8037%;width:40px;">
+			<p class="g-pstyle4">gal</p>
+		</div>
+		<div id="g-ai1-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:86.9342%;margin-top:-9px;left:53.7841%;width:43px;">
+			<p class="g-pstyle4">guy</p>
+		</div>
+		<div id="g-ai1-21" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.7579%;margin-top:-9px;left:58.3301%;width:55px;">
+			<p class="g-pstyle4">junior</p>
+		</div>
+	</div>
+
+	<!-- Artboard: mobile -->
+	<div id="g-templates3-mobile" class="g-artboard" style="width:375px; height:550.799999999999px;" data-aspect-ratio="0.681" data-min-width="375" data-max-width="489">
+		<img id="g-templates3-mobile-img" class="g-aiImg g-aiAbs" alt="" src="templates3-mobile.png"/>
+		<div id="g-ai2-1" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:5.7783%;margin-top:-21.8px;left:50.1635%;margin-left:-176.5px;width:353px;">
+			<p class="g-pstyle0">Percentage of Each Diminutive Name Used </p>
+			<p class="g-pstyle0">for Comic Book Characters </p>
+		</div>
+		<div id="g-ai2-2" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:12.3525%;margin-top:-9px;left:35.526%;width:135px;">
+			<p class="g-pstyle1">Source: The Pudding</p>
+		</div>
+		<div id="g-ai2-3" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.936%;margin-top:-8.3px;left:0.957%;width:48px;">
+			<p class="g-pstyle2">20%</p>
+		</div>
+		<div id="g-ai2-4" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.936%;margin-top:-8.3px;left:23.6224%;width:48px;">
+			<p class="g-pstyle2">10%</p>
+		</div>
+		<div id="g-ai2-5" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.936%;margin-top:-8.3px;left:47.7906%;width:41px;">
+			<p class="g-pstyle2">0%</p>
+		</div>
+		<div id="g-ai2-6" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.936%;margin-top:-8.3px;left:70.0198%;width:48px;">
+			<p class="g-pstyle2">10%</p>
+		</div>
+		<div id="g-ai2-7" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:16.936%;margin-top:-8.3px;left:92.6852%;width:48px;">
+			<p class="g-pstyle2">20%</p>
+		</div>
+		<div id="g-ai2-8" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.5108%;margin-top:-9px;left:12.4349%;width:40px;">
+			<p class="g-pstyle3">girl</p>
+		</div>
+		<div id="g-ai2-9" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:28.5108%;margin-top:-9px;left:65.9948%;width:43px;">
+			<p class="g-pstyle3">boy</p>
+		</div>
+		<div id="g-ai2-10" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:36.3176%;margin-top:-9px;left:23.0185%;width:49px;">
+			<p class="g-pstyle3">miss</p>
+		</div>
+		<div id="g-ai2-11" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.6662%;margin-top:-9px;left:20.599%;width:71px;">
+			<p class="g-pstyle3">princess</p>
+		</div>
+		<div id="g-ai2-12" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:46.6662%;margin-top:-9px;left:58.9029%;width:58px;">
+			<p class="g-pstyle3">prince</p>
+		</div>
+		<div id="g-ai2-13" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.9255%;margin-top:-9px;left:36.9935%;width:46px;">
+			<p class="g-pstyle3">lass</p>
+		</div>
+		<div id="g-ai2-14" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:55.9255%;margin-top:-9px;left:57.9482%;width:40px;">
+			<p class="g-pstyle3">lad</p>
+		</div>
+		<div id="g-ai2-15" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:65.3663%;margin-top:-9px;left:38.1896%;width:43px;">
+			<p class="g-pstyle3">doll</p>
+		</div>
+		<div id="g-ai2-16" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.2624%;margin-top:-9px;left:31.1565%;width:74px;">
+			<p class="g-pstyle3">daughter</p>
+		</div>
+		<div id="g-ai2-17" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:74.2624%;margin-top:-9px;left:55.6297%;width:43px;">
+			<p class="g-pstyle3">son</p>
+		</div>
+		<div id="g-ai2-18" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.3373%;margin-top:-9px;left:40.4635%;width:40px;">
+			<p class="g-pstyle3">gal</p>
+		</div>
+		<div id="g-ai2-19" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:85.3373%;margin-top:-9px;left:54.8115%;width:43px;">
+			<p class="g-pstyle3">guy</p>
+		</div>
+		<div id="g-ai2-20" class="g-Layer_1 g-aiAbs g-aiPointText" style="top:95.1412%;margin-top:-9px;left:60.7513%;width:55px;">
+			<p class="g-pstyle3">junior</p>
+		</div>
+	</div>
+
+</div>
+<br>
+<br>
+<br>
+
+<!-- End ai2html - 2019-09-15 19:25 -->
+
+                
+                        </div>
+                    </div>
+                </div>
+
+                <div class="story-body">
+                        <p class="body-text serif">Marvel and DC are no longer simply convenience-store singles. Today, they’re blockbuster movies, fast-selling merchandise, drama-filled tv shows, and popular video games. The more we see these characters appear in pop culture, the more their representation matters — especially because female characters form such a small fraction of the whole.</p>
+                        <p class="body-text serif">The good news is that things may be changing. Both DC and Marvel have slowly begun to increase the number of female characters in their output. However, while some features may be altered, established and traditional characters tend to maintain their names and powers. They continue to carry the representative baggage of their past.</p>
+                    </div>
+
+                    <script type="text/javascript">
+                        (function() {
+                            // only want one resizer on the page
+                            if (document.documentElement.className.indexOf("g-resizer-v3-init") > -1) return;
+                            document.documentElement.className += " g-resizer-v3-init";
+                            // require IE9+
+                            if (!("querySelector" in document)) return;
+                            function resizer() {
+                                var elements = Array.prototype.slice.call(document.querySelectorAll(".g-artboard[data-min-width]")),
+                                    widthById = {};
+                                elements.forEach(function(el) {
+                                    var parent = el.parentNode,
+                                        width = widthById[parent.id] || parent.getBoundingClientRect().width,
+                                        minwidth = el.getAttribute("data-min-width"),
+                                        maxwidth = el.getAttribute("data-max-width");
+                                    widthById[parent.id] = width;
+                                    if (+minwidth <= width && (+maxwidth >= width || maxwidth === null)) {
+                                        el.style.display = "block";
+                                    } else {
+                                        el.style.display = "none";
+                                    }
+                                });
+                                try {
+                                    if (window.parent && window.parent.$) {
+                                        window.parent.$("body").trigger("resizedcontent", [window]);
+                                    }
+                                    if (window.require) {
+                                        require(['foundation/main'], function() {
+                                            require(['shared/interactive/instances/app-communicator'], function(AppCommunicator) {
+                                                AppCommunicator.triggerResize();
+                                            });
+                                        });
+                                    }
+                                } catch(e) { console.log(e); }
+                            }
+                            document.addEventListener('DOMContentLoaded', resizer);
+                            // feel free to replace throttle with _.throttle, if available
+                            window.addEventListener('resize', throttle(resizer, 200));        
+                            function throttle(func, wait) {
+                                // from underscore.js
+                                var _now = Date.now || function() { return new Date().getTime(); },
+                                    context, args, result, timeout = null, previous = 0;
+                                var later = function() {
+                                    previous = _now();
+                                    timeout = null;
+                                    result = func.apply(context, args);
+                                    if (!timeout) context = args = null;
+                                };
+                                return function() {
+                                    var now = _now(), remaining = wait - (now - previous);
+                                    context = this;
+                                    args = arguments;
+                                    if (remaining <= 0 || remaining > wait) {
+                                        if (timeout) {
+                                            clearTimeout(timeout);
+                                            timeout = null;
+                                        }
+                                        previous = now;
+                                        result = func.apply(context, args);
+                                        if (!timeout) context = args = null;
+                                    } else if (!timeout && options.trailing !== false) {
+                                        timeout = setTimeout(later, remaining);
+                                    }
+                                    return result;
+                                };
+                            }
+                           
+                        })();
+                    </script>
+
+  </body>
+</html>
