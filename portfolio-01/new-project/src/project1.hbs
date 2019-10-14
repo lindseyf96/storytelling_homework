@@ -1,0 +1,41 @@
+---
+headline: "A lot of stuff gets lost on nyc public transportation"
+published_date: "October 12, 2019"
+site: "http://www.littlecolumns.com"
+siteName: "Little Columns"
+url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+kicker: "d3 project 1"
+author:
+    name: "By Lindsey Feingold"
+analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+
+<div class="story-body">
+<p><a href="index.hbs">Go Back</a></default>
+</div> <br><br>
+
+    <div class="story-body">
+      <p class="body-text">Wall covering. A hockey stick. Blood pressure meters. What do these three items have in common? They were all lost on New York City public transportation, according to an MTA dataset that lists every catalogued lost item. </p>
+      <p class="body-text">The MTA is the largest public transportation agency in North America and encompasses all subways and buses for the five boroughs. MTA's New York City Transit Lost and Found Office is in charge of the dataset and holds items for three months to three years, depending on the circumstance. They have successfully returned 90,632 items back to its owners.</p>
+      <p class="body-text">And while some types of lost categories are predictable -- like wallets, ID's, or cell phones, there are some categories no one would expect, such as musical instruments and transit equipment lost by MTA employees.</p>
+      <p class="body-text"></p>
+    </div> <br>
+
+    {{> story/tree_map }}
+
+
+        <br><div class="story-body">
+      <p class="body-text">Identification items alone make up about 220,000 lost items -- that's about 79 percent of the total amount of objects lost. It's also more than twice the amount of lost items that were claimed or returned to its rightful owners.</p> </div>
+
+    {{> story/lost_items }}
+      
+              <br><div class="story-body">
+         <p class="body-text">When asked about this dataset, which is a <a href='http://advisory.mtanyct.info/LPUWebServices/CurrentLostProperty.aspx'>hidden HTML-only page</a> on the MTA website, a representative for the NYCT Lost and Found Office would not comment on the last time it was updated or if it's an accurate count (an inquiry was officially opened and is pending).</p>
+      <p class="body-text">If you lose your belongings on New York City public transit, you can file a claim on the MTA website and check the NYCT Lost and Found Office located at 34 St-Penn Station.</p>
+      <p class="body-text">And remember: always check to make sure you have everything before you leave the subway car or bus.</p>
+      </div>

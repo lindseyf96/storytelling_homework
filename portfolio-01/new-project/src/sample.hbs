@@ -1,0 +1,56 @@
+---
+headline: "New York City Pays Employees Vastly Different Salaries"
+subhead: "Some agencies have way higher salaries than other ones"
+published_date: "September 9, 2019"
+site: "http://www.littlecolumns.com"
+siteName: "Little Columns"
+url: "http://littlecolumns.com/learn/d3-javascript-tooling/"
+kicker: "ai2html project"
+author:
+    name: "By Lindsey Feingold"
+analytics": ""
+---
+<!-- 
+  This line means, use default.hbs layout from src/html/layouts/
+-->
+
+{{!< default}}
+
+<div class="story-body">
+<p><a href="index.hbs">Go Back</a></default>
+</div> <br><br>
+
+
+<!-- 
+  Put some content into an .hbs file inside of /partials, 
+  and you can just throw it in anywhere!
+-->
+
+<div class="story-body">
+      <p class="body-text serif">      The highest salaries per agency (paid per annum) vary greatly. Many community boards are on the lower end of this scale, while large city government agencies such as the Law Department, Office of the Actuary, and the Campaign Finance Board are on the higher end of this scale.</p>
+
+      <p class="body-text serif">19 out of the lowest 20 max salaries are from community boards. On the other hand, six of the agencies with the highest max salaries are related to education in some way. The lowest max salary is from the Manhattan Community Board at $50,000. The highest max salary is from the Department of Ed Pedagogical, at $345,000 (this also references the top paid person in the entire public sector per annum).</p>
+
+      <p class="body-text serif">Something to note: the Office of the Mayor has a large scale in the chart below because there is one individual who makes $1 as a special assistant. </p>
+    </div>
+
+
+<!-- 
+  If you want to use something exported from ai2html...
+    1. Rename the exported .html file to .hbs
+    2. Put the .hbs file inside of 'html/story'
+    3. Move the exported images to the images folder
+    4. Include the partial normally like below
+  -->
+
+{{> story/templates }}
+
+<!--
+  You can also put the actual HTML here if you really want to,
+  although it's a little less organized looking
+-->
+
+<div class="story-body">
+        <p class="body-text serif">The agencies with the highest amount of people who leave contained many community boards. There are 59 boards in the city and until this year, there were no term limits. However, each member serves a two year term, so for some there is a revolving door of candidates.</p>
+        <p class="body-text serif">The top two agencies where people left had a 100 percent ceased rate since the Department of Juvenile Justice was absorbed into the Administration for Children's Services and the work of the most reecnt Districting Commission concluded.</p>
+    </div>
