@@ -1,0 +1,10 @@
+source,target,value
+Lawful, Good, 2
+Lawful, Neutral, 3
+Lawful, Evil, 0
+Neutral, Good, 6
+Neutral, Neutral, 4
+Neutral, Evil, 0
+Chaotic, Good, 3
+Chaotic, Neutral, 0
+Chaotic, Evil, 1 
