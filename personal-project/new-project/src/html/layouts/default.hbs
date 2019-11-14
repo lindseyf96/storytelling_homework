@@ -6,10 +6,12 @@
   {{> base/fonts }}
   {{> base/analytics }}
 </head>
+
+{{> story/header }}
+
 <body>
   <!-- The headline area pulls most of its content from data/meta.json -->
-  {{> base/headline }}
-
+  
   <main id='content'>
 
     {{{body}}}
@@ -19,6 +21,8 @@
 
   <!-- We'll always keep this JS file around -->
   <script src="scripts/vendor/ai2html-resizer.js"></script>
+  <script src="scripts/scrollytelling.js"></script>
+  <script src="scripts/chart-images.js"></script>
 
 </body>
 </html>

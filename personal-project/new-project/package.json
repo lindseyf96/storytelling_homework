@@ -8,6 +8,10 @@
     "start": "parcel src/index.hbs --no-hmr",
     "build": "parcel build src/index.hbs --out-dir docs --public-url ."
   },
+  "staticFiles": {
+    "staticPath": "src/static",
+    "watcherGlob": "**"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/littlecolumns/sawhorse.git"
@@ -44,6 +48,7 @@
   },
   "dependencies": {
     "@jsoma/parcel-plugin-handlebars": "^0.8.4",
-    "d3-sankey": "^0.12.3"
+    "d3-sankey": "^0.12.3",
+    "parcel-plugin-static-files-copy": "^2.2.1"
   }
 }
