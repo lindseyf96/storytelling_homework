@@ -171,6 +171,7 @@ function ready(datapoints) {
     .text('Lede students')
     .style('font-size', '15px')
     .attr('alignment-baseline', 'middle')
+    .attr('fill', 'white')
   svg
     .append('text')
     .attr('x', 220)
@@ -178,4 +179,6 @@ function ready(datapoints) {
     .text('MS Data students')
     .style('font-size', '15px')
     .attr('alignment-baseline', 'middle')
+    .attr('fill', 'white')
+
 }

@@ -256,6 +256,8 @@ function ready(datapoints) {
     .text('Students')
     .style('font-size', '15px')
     .attr('alignment-baseline', 'middle')
+    .attr('fill', 'white')
+
   svg
     .append('text')
     .attr('x', 220)
@@ -263,4 +265,6 @@ function ready(datapoints) {
     .text("Professors/TA's")
     .style('font-size', '15px')
     .attr('alignment-baseline', 'middle')
+    .attr('fill', 'white')
+
 }

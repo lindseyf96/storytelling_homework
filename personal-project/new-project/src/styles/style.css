@@ -250,4 +250,28 @@ p.caption {
 
 #thing {
     background-color: #071B27;
+    color: white;
+    padding: 10px;
+}
+
+.disclaimer{
+    font-style: italic;
+    font-size: 17px;
+    padding: 30px;
+    color: gray;    
+}
+
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    bottom:30;
+  }
+
+  @media (max-width:950px) {
+
+    .sticky {
+        display: none;
+    }
+
 }
