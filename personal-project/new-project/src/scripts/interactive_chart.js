@@ -41,7 +41,7 @@ const svg = d3
       .append('g')
       .attr("transform", "translate(-25,-25)")
       .append('image')
-      .attr('xlink:href', d => "/images/" + d.image)
+      .attr('xlink:href', d => "static/images/" + d.image)
       .attr("height", 50)
       .style('opacity', 0)
       // .attr('x', d => Math.random()*width)
