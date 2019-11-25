@@ -202,8 +202,7 @@ p.chart-source {
 }
 
 .photo {
-    width:100%;
-    padding-right:15px;
+    padding:0;
 }
 .photo img {
     width:100%;	
